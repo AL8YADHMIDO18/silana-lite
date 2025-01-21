@@ -16,7 +16,7 @@ import path from 'path';
 import moment from 'moment-timezone';
 import fs from 'fs';
 import yargs from 'yargs';
-import express from 'express';
+import express from 'express'; // Import express
 import chalk from 'chalk';
 
 let formatSize = sizeFormatter({
@@ -28,8 +28,8 @@ let formatSize = sizeFormatter({
 
 const { say } = cfont;
 const { tz } = moment;
-const app = express();
-const port = process.env.PORT || 7860;
+const port = process.env.PORT || 7860; // Set the port
+const app = express(); // Initialize express app
 const time = tz('Africa/Casablanca').format('HH:mm:ss');
 const currentFilePath = new URL(import.meta.url).pathname;
 
