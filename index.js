@@ -26,7 +26,7 @@ let formatSize = sizeFormatter({
 const { say } = cfont;
 const { tz } = moment;
 const app = express();
-const port = process.env.PORT || 7860;
+const port = process.env.PORT || 8040;
 const time = tz('Africa/Casablanca').format('HH:mm:ss');
 const currentFilePath = new URL(import.meta.url).pathname;
 
